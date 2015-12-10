@@ -17,6 +17,15 @@ public class HelloMoonFragment extends Fragment {
     private Button mPlayButton;
     private Button mStopButton;
 
+
+    // this will manage the rotation of the activity
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        // use the following method to rotation manage
+        setRetainInstance(true);
+    }
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
